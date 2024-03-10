@@ -156,6 +156,7 @@ void insert(char *str1, const char *str2, int32_t index) {
     }
 }
 
+// removes a given amount of characters from the string indicated by the beginning and end parameters
 void erase(char *str1, int32_t begin, int32_t end) {
     int32_t len1 = length(str1);
     if (begin < 0 || begin >= len1 || end < 0 || begin + end > len1) {
