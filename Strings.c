@@ -169,3 +169,14 @@ void erase(char *str1, int32_t begin, int32_t end) {
 
     str1[len1 - end ] = '\0';
 }
+
+// reverses a given string
+void reverse(char* str){
+    int32_t len = length(str);
+    char swap;
+    for(size_t i = 0; i < len/2; ++i){
+        swap = str[i];
+        str[i] = str[len - i - 1];
+        str[len - i - 1] = swap;
+    }
+}
