@@ -32,4 +32,6 @@ void insert(char *str1, const char *str2, int32_t index);
 
 void erase(char *str1, int32_t begin, int32_t end);
 
+void reverse(char* str);
+
 #endif //STRINGS_STRINGS_H
