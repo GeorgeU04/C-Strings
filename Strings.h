@@ -1,14 +1,16 @@
-//
-// Created by gjumb on 3/3/2024.
-//
-
 #ifndef STRINGS_STRINGS_H
 #define STRINGS_STRINGS_H
 
-#include<stdint.h>
-#include<stdbool.h>
+#include <stdbool.h>
+#include <stdlib.h>
 
 char *init_string(char *str);
+
+bool is_empty(char *str);
+
+void clear(char *str);
+
+void popback(char *str);
 
 void string_cpy(char *dest, const char *str);
 
@@ -32,6 +34,6 @@ void insert(char *str1, const char *str2, int32_t index);
 
 void erase(char *str1, int32_t begin, int32_t end);
 
-void reverse(char* str);
+void reverse(char *str);
 
-#endif //STRINGS_STRINGS_H
+#endif // STRINGS_STRINGS_H
